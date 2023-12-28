@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.breed-card {
+  display: flex;
+  width: 100%;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.right-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: slategray;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.left-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.left-container th,
+.left-container td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.right-container .breed-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container .breed-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-container .name {
+  margin: 10px;
+}
+
+.breed-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .breed-details img {
+    border-radius: 50%; 
+    margin-right: 20px; 
+  }
+  
+  .breed-details > div {
+    margin-bottom: 10px; 
+  }
+
+.breed-details img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(147, 147, 194);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .breed-card {
+    flex-direction: column;
+  }
+
+  .right-container {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
